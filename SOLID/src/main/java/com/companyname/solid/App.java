@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args ) throws IOException, ParseException {
 
-        SourceReader sourceReader = new SourceReader("textfile");
+        FileLogReader sourceReader = new FileLogReader("textfile");
         String logsRead = sourceReader.readLogsFromSource();
 
         JsonConverter jsonConverter = new JsonConverter(logsRead);
