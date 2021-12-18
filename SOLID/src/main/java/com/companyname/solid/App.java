@@ -1,5 +1,6 @@
 package com.companyname.solid;
 
+import com.companyname.solid.interfaces.SourceReader;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
@@ -11,9 +12,9 @@ import java.io.IOException;
  */
 public class App
 {
-    public static void main( String[] args ) throws IOException, ParseException {
+    public static void main( String[] args ) throws Exception {
 
-        FileLogReader sourceReader = new FileLogReader("textfile");
+        SourceReader sourceReader = new FileLogReader();
         String logsRead = sourceReader.readLogsFromSource();
 
         JsonConverter jsonConverter = new JsonConverter(logsRead);
