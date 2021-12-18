@@ -1,0 +1,3 @@
+10:01 127.0.0.1 GET /my/books/purchased.
+10:02 127.0.1.1 POST /my/books/create.
+10:03 127.0.2.1 UPDATE /my/books/edit.
